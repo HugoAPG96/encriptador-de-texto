@@ -70,17 +70,20 @@ main{
 }
 
 .invertir{
-    box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.5);
+    background-color: transparent;
+    font-weight: semibold;
+    color: #444;
+    font-size: 1rem;
+    padding: 1rem 1.5rem;
+    border: 2px solid #eee;
+    border-radius: 2rem;
+    cursor: pointer;
+    transition: all 1s ease;
     position: absolute;
     right: 5%;
     top: 40%;
-    border: 1px #0A3871;
-    border-radius: 50%;
-    cursor: pointer;
-}
-
-.invertir img{
-    scale: 0.7;
+    box-shadow: .5rem .5rem 1rem #ccc, 
+    -.5rem -.5rem 1rem #fff;
 }
 
 .area-resultado {
@@ -144,6 +147,16 @@ main{
     margin-top: auto;
 }
 
+.invertir:hover{
+    box-shadow: .5rem .5rem 1rem #fff, 
+    -.5rem -.5rem 1rem #ccc;;
+}
+
+.invertir:active{
+    box-shadow: inset .5rem .5rem 1rem #fff, 
+    inset -.2rem -.5rem 1rem #ccc;;
+}
+
 @media screen and (max-width: 1024px) {
     main{
         display: block;
@@ -184,7 +197,6 @@ main{
     .invertir{
         position: static;
         margin: 15px;
-        transform: rotate(90deg);
     }
 
     .campo-sinresultado img{
