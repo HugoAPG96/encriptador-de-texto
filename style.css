@@ -242,6 +242,10 @@ main{
         padding-left: 6px;
     }
 
+    .invertir span{
+        scale:  1;
+    }
+
     .area-resultado {
         min-width: auto;
         margin-bottom: 20px;
